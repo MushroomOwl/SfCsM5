@@ -11,12 +11,8 @@ public class Program
 
     static (string FName, string LName, int Age, string[] PetNames, string[] FavColors) AskUserForData()
     {
-        (string FName, string LName, int Age, string[] PetNames, string[] FavColors) User;
-        User.FName = "";
-        User.LName = "";
-        User.Age = 0;
-        User.PetNames = new string[0];
-        User.FavColors = new string[0];
+        (string FName, string LName, int Age, string[] PetNames, string[] FavColors) User 
+            = ("", "", 0, new string[0], new string[0]);
 
         Console.Write(
             "Доброго времени суток! \n" +
